@@ -1,0 +1,463 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElixLens Photography</title>
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <meta property="og:title" content="ElixLens Photography">
+  <meta property="og:description" content="Capturing moments and creating stories through stunning photography.">
+  <meta property="og:image" content="photo.png">
+  <meta property="og:url" content="https://www.elixlens.com">
+  <meta name="author" content="Elise Riboux">
+  <meta name="keywords" content="photography, Elise Riboux, Paris photographer, visual storytelling, professional photography, Sony Ambassador">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">ELIXLENS <span class="by-line">by Elise Riboux</span></div>
+    <div class="menu">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <span class="hero-text" style="display: flex; flex-direction: column; align-items: center;">
+        <h1>Capturing Moments<br>Creating Stories</h1>
+        <p>Join me on a journey through the lens, where every click tells a story.</p>
+      </span>
+      <div class="scroll-indicator">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5l-8 8h16l-8-8z"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <section class="bio-highlight">
+    <div class="bio-container">
+      <div class="bio-image">
+        <svg viewBox="0 0 200 200" class="bio-blob">
+          <path d="M40,-50C53.8,-41.3,68.2,-32.6,74.2,-19.6C80.2,-6.6,77.8,10.7,70.8,25.5C63.8,40.3,52.3,52.6,38.5,60.1C24.7,67.6,8.7,70.3,-7.1,68.7C-22.9,67.1,-38.5,61.2,-51.2,50.9C-63.9,40.6,-73.7,25.8,-76.5,9.7C-79.3,-6.4,-75.1,-23.9,-64.8,-34.9C-54.5,-45.9,-38,-50.4,-24.2,-59C-10.4,-67.6,0.7,-80.3,7.1,-76.2C13.5,-72.1,26.2,-58.7,40,-50Z" transform="translate(100 100)"/>
+        </svg>
+        <span class="bio-initials">
+          <img src="photo.png" style="width: 150px; height: 150px; object-fit: cover; border-radius: 30%;">
+        </span>
+      </div>
+      <div class="bio-text">
+        <h2>Elise Riboux</h2>
+        <p class="bio-tagline">French photographer based in Paris, capturing life's extraordinary moments since 2010</p>
+        <p>With a passion for storytelling through imagery, I strive to create timeless pieces that resonate with emotions.</p>
+        <div class="bio-badges">
+          <span>🇫🇷 Native French</span>
+          <span>🌍 International</span>
+          <span>📸 Sony Ambassador</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="gallery">
+    <div class="section-header">
+      <h2>Featured Work</h2>
+      <p>Explore a curated selection of my best work, showcasing the beauty of life through my lens.</p>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="portrait">Portrait</button>
+        <button class="filter-btn" data-category="architecture">Architecture</button>
+        <button class="filter-btn" data-category="street">Street</button>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <!-- Gallery items dynamically inserted by JS -->
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="parallax-container">
+      <h2>Our Services</h2>
+      <p>We offer a range of photography services tailored to meet your needs, ensuring every moment is captured beautifully.</p>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="card-icon"><i class="fas fa-camera"></i></div>
+          <h3>Wedding Photography</h3>
+          <p>Capturing your special moments with elegance and style</p>
+          <div class="price">From $1,499</div>
+          <button class="book-btn">Book Now</button>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fas fa-user"></i></div>
+          <h3>Portrait Sessions</h3>
+          <p>Professional portraits that tell your story</p>
+          <div class="price">From $299</div>
+          <button class="book-btn">Book Now</button>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fas fa-building"></i></div>
+          <h3>Commercial</h3>
+          <p>Brand photography that makes an impact</p>
+          <div class="price">Custom Quote</div>
+          <button class="book-btn">Inquire</button>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fas fa-baby-carriage"></i></div>
+          <h3>Family Photography</h3>
+          <p>Creating lasting memories with your loved ones</p>
+          <div class="price">From $399</div>
+          <button class="book-btn">Book Now</button>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Artistic Projects</h3>
+          <p>Collaborative projects that blend art and photography</p>
+          <div class="price">Custom Quote</div>
+          <button class="book-btn">Inquire</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <h2>Expertise Areas</h2>
+    <p>Our expertise spans various photography styles, ensuring we can meet your unique needs.</p>
+    <div class="specialty-grid">
+      <div class="specialty-card">
+        <div class="specialty-icon"><i class="fas fa-tshirt"></i></div>
+        <h3>Fashion Photography</h3>
+        <ul class="specialty-features">
+          <li>Editorial Shoots</li>
+          <li>Runway Coverage</li>
+          <li>Lookbook Creation</li>
+        </ul>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon"><i class="fas fa-heart"></i></div>
+        <h3>Wedding Stories</h3>
+        <ul class="specialty-features">
+          <li>Pre-Wedding Sessions</li>
+          <li>Destination Weddings</li>
+          <li>Album Design</li>
+        </ul>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Corporate Events</h3>
+        <ul class="specialty-features">
+          <li>Conferences</li>
+          <li>Team Building</li>
+          <li>Product Launches</li>
+        </ul>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon"><i class="fas fa-camera-retro"></i></div>
+        <h3>Travel Photography</h3>
+        <ul class="specialty-features">
+          <li>Documenting cultures</li>
+          <li>Adventure photography</li>
+          <li>Landscape captures</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>I am a professional photographer specializing in capturing life's most precious moments. With over a decade of experience, I bring creativity and technical expertise to every shoot.</p>
+      <p>My journey began with a simple camera and a passion for storytelling. Today, I have honed my skills to create stunning visuals that evoke emotions and memories.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="number">10+</span>
+          <span class="label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="number">500+</span>
+          <span class="label">Happy Clients</span>
+        </div>
+        <div class="stat">
+          <span class="number">50K+</span>
+          <span class="label">Photos Taken</span>
+        </div>
+        <div class="stat">
+          <span class="number">25+</span>
+          <span class="label">Awards Won</span>
+        </div>
+        <div class="stat">
+          <span class="number">100%</span>
+          <span class="label">Client Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="number">48h</span>
+          <span class="label">Delivery Time</span>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <h3>What Clients Say</h3>
+        <div class="testimonial-carousel">
+          <div class="testimonial-container">
+            <div class="testimonial active">
+              <div class="quote">"ElixLens captured our wedding perfectly. Every moment, every emotion - pure magic!"</div>
+              <div class="author">- Sarah & James</div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">"Elise's eye for detail and creativity is unmatched. Our family photos are treasures!"</div>
+              <div class="author">- The Martin Family</div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">"Professional, creative, and absolutely talented. Best decision ever!"</div>
+              <div class="author">- Marie Laurent</div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">"The team at ElixLens made our event unforgettable. Highly recommend!"</div>
+              <div class="author">- John & Emily</div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">"Incredible service and stunning photos! We couldn't be happier!"</div>
+              <div class="author">- The Smiths</div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">"ElixLens has a unique ability to capture the essence of every moment!"</div>
+              <div class="author">- Alex Johnson</div>
+            </div>
+          </div>
+          <div class="carousel-controls" style="display: none; justify-content: center; align-items: center; gap: 1rem; margin-top: 2rem;">
+            <button class="prev-btn">&lt;</button>
+            <div class="carousel-dots"></div>
+            <button class="next-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <div class="achievement">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <div class="achievement-text">
+            <h4>Best Photography Studio 2023</h4>
+            <p>International Photography Awards</p>
+          </div>
+        </div>
+        <div class="achievement">
+          <div class="achievement-icon"><i class="fas fa-star"></i></div>
+          <div class="achievement-text">
+            <h4>Featured in Vogue</h4>
+            <p>Editorial Excellence</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fancy-boxes">
+        <div class="fancy-box">
+          <div class="box-icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <div class="box-content">
+            <h3>Professional Studio</h3>
+            <p>State-of-the-art photography studio equipped with the latest gear and lighting equipment.</p>
+          </div>
+        </div>
+        <div class="fancy-box">
+          <div class="box-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="box-content">
+            <h3>Premium Equipment</h3>
+            <p>Using only the highest quality cameras and lenses to ensure exceptional image quality.</p>
+          </div>
+        </div>
+        <div class="fancy-box">
+          <div class="box-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="box-content">
+            <h3>Creative Vision</h3>
+            <p>Bringing artistic perspective and unique storytelling to every photography project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" style="padding: 5% !important;">
+    <h2>Our Process</h2>
+    <p>We believe in a seamless process that ensures your vision is realized from start to finish.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-number">01</div>
+        <h3>Initial Consultation</h3>
+        <p>We discuss your vision and requirements</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-number">02</div>
+        <h3>Planning</h3>
+        <p>Creating the perfect shot list and schedule</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-number">03</div>
+        <h3>Photoshoot</h3>
+        <p>Professional photography session</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-number">04</div>
+        <h3>Post-Production</h3>
+        <p>Expert editing and enhancement</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-number">05</div>
+        <h3>Delivery</h3>
+        <p>Your memories, perfectly preserved</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="exp-counter">
+      <div class="counter-wrap">
+        <div class="counter" data-target="1278">0</div>
+        <span>Happy Clients</span>
+      </div>
+      <div class="counter-wrap">
+        <div class="counter" data-target="52">0</div>
+        <span>Awards Won</span>
+      </div>
+      <div class="counter-wrap">
+        <div class="counter" data-target="15">0</div>
+        <span>Years Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="publications">
+    <h2>Featured In</h2>
+    <p>Our work has been recognized in various prestigious publications.</p>
+    <div class="publication-logos">
+      <div class="pub-logo">VOGUE</div>
+      <div class="pub-logo">ELLE</div>
+      <div class="pub-logo">BAZAAR</div>
+      <div class="pub-logo">VANITY FAIR</div>
+      <div class="pub-logo">NATIONAL GEOGRAPHIC</div>
+    </div>
+  </section>
+
+  <section class="resume">
+    <div class="resume-content">
+      <h2>Professional Journey</h2>
+      <p>My career has been a journey of passion, creativity, and dedication to the art of photography.</p>
+      <div class="resume-timeline">
+        <div class="resume-item">
+          <div class="resume-year">2023 - Present</div>
+          <div class="resume-details">
+            <h3>Lead Photographer, and <a href="https://www.foxyagency.fr" style="color: #fff; text-decoration: underline; font-weight: bold;" target="_blank">FoxyAgency</a> worker</h3>
+            <div class="resume-company">ElixLens Studio, Paris</div>
+            <ul>
+              <li>Founded and managing premier photography studio in Paris</li>
+              <li>Specialized in high-end fashion and wedding photography</li>
+              <li>Featured in Vogue, Elle, and other prestigious publications</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="resume-item">
+          <div class="resume-year">2018 - 2023</div>
+          <div class="resume-details">
+            <h3>Senior Photographer</h3>
+            <div class="resume-company">Maison de la Photographie, Paris</div>
+            <ul>
+              <li>Led team of 5 photographers for major fashion events</li>
+              <li>Principal photographer for Paris Fashion Week</li>
+              <li>Developed innovative lighting techniques for studio portraits</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="resume-item">
+          <div class="resume-year">2015 - 2018</div>
+          <div class="resume-details">
+            <h3>Event Photographer</h3>
+            <div class="resume-company">Lumière Studios, Lyon</div>
+            <ul>
+              <li>Specialized in luxury wedding photography</li>
+              <li>Covered major corporate events across France</li>
+              <li>Mentored junior photographers</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="resume-item">
+          <div class="resume-year">2010 - 2015</div>
+          <div class="resume-details">
+            <h3>Freelance Photographer</h3>
+            <div class="resume-company">Self-Employed</div>
+            <ul>
+              <li>Built robust client portfolio from ground up</li>
+              <li>Published in multiple international magazines</li>
+              <li>Developed unique visual storytelling style</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="education-certifications">
+        <h3>Education & Certifications</h3>
+        <p>My educational background and certifications have equipped me with the skills necessary to excel in photography.</p>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h4>Master of Arts in Photography</h4>
+            <p>École des Beaux-Arts, Paris</p>
+            <span class="cert-year">2010</span>
+          </div>
+          
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <h4>Sony Digital Imaging Professional</h4>
+            <p>Certified Professional Photographer</p>
+            <span class="cert-year">2018</span>
+          </div>
+          
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fas fa-award"></i></div>
+            <h4>Adobe Certified Expert</h4>
+            <p>Photoshop & Lightroom Specialist</p>
+            <span class="cert-year">2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Let's Work Together</h2>
+      <p>Ready to capture your moments? Fill out the form below to get in touch!</p>
+      <form id="contact-form" action="/contact" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="collaboration">
+    <h2>Collaboration with ItsRealFortune</h2>
+    <p>We are excited to announce our collaboration with ItsRealFortune, bringing you exclusive photography experiences and unique storytelling.</p>
+    <p>Her website is <a href="https://itsrealfortune.fr" target="_blank">here</a></p>
+    <p>Stay tuned for upcoming workshops and events that will enhance your photography skills!</p>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/elix.rbx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com/elixlens" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/elixlens" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> ElixLens Photography. All rights reserved.</p>
+  </footer>
+</body>
+</html>
